@@ -12,6 +12,7 @@ submit.addEventListener("click", function(){
     let guess = Number(userinput.value);
     if(guess===randomnum){
         gameresult.innerText = "Congratulation, You guessed the Right Number..!";
+        gameresult.style.color = "rgb(13,204,13)";
         attemts--;
         attemtsrem.innerText = "Attempts Remaining : "+ attemts;
 
